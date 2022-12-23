@@ -23,7 +23,8 @@ export default function DeleteUser() {
     console.log('User needs to be deleted');
     deleteUser().then((response) => {
       console.log(response, 'user deleted!');
-      navigate('/');
+      localStorage.clear();
+      navigate('/expense-manager/');
     });
   };
 

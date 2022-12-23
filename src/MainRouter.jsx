@@ -22,44 +22,44 @@ export default function MainRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         {authContext.isLoggedIn ? (
-          <Route path="/newExpense" element={<NewExpense />} />
+          <Route path="/expense-manager/newExpense" element={<NewExpense />} />
         ) : (
-          <Route path="/newExpense" element={<PageNotFound />} />
+          <Route path="/expense-manager/newExpense" element={<PageNotFound />} />
         )}
 
         {authContext.isLoggedIn ? (
-          <Route path="/users" element={<Users />} />
+          <Route path="/expense-manager/users" element={<Users />} />
         ) : (
-          <Route path="/users" element={<PageNotFound />} />
+          <Route path="/expense-manager/users" element={<PageNotFound />} />
         )}
         {authContext.isLoggedIn ? (
-          <Route path="/user/expenses" element={<Expenses />} />
+          <Route path="/expense-manager/user/expenses" element={<Expenses />} />
         ) : (
-          <Route path="/user/expenses" element={<PageNotFound />} />
+          <Route path="/expense-manager/user/expenses" element={<PageNotFound />} />
         )}
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/expense-manager/signup" element={<Signup />} />
+        <Route path="/expense-manager/signin" element={<Signin />} />
         {authContext.isLoggedIn ? (
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/expense-manager/profile" element={<Profile />} />
         ) : (
-          <Route path="/profile" element={<PageNotFound />} />
+          <Route path="/expense-manager/profile" element={<PageNotFound />} />
         )}
         {authContext.isLoggedIn ? (
-          <Route path="/user/edit/:userId" element={<EditProfile />} />
+          <Route path="/expense-manager/user/edit/:userId" element={<EditProfile />} />
         ) : (
-          <Route path="/user/edit/:userId" element={<PageNotFound />} />
-        )}
-
-        {authContext.isLoggedIn ? (
-          <Route path="/user/expenseOverview" element={<ExpenseOverview />} />
-        ) : (
-          <Route path="/user/expenseOverview" element={<PageNotFound />} />
+          <Route path="/expense-manager/user/edit/:userId" element={<PageNotFound />} />
         )}
 
         {authContext.isLoggedIn ? (
-          <Route path="/user/expenses/report" element={<Report />} />
+          <Route path="/expense-manager/user/expenseOverview" element={<ExpenseOverview />} />
         ) : (
-          <Route path="/user/expenses/report" element={<PageNotFound />} />
+          <Route path="/expense-manager/user/expenseOverview" element={<PageNotFound />} />
+        )}
+
+        {authContext.isLoggedIn ? (
+          <Route path="/expense-manager/user/expenses/report" element={<Report />} />
+        ) : (
+          <Route path="/expense-manager/user/expenses/report" element={<PageNotFound />} />
         )}
       </Routes>
     </div>

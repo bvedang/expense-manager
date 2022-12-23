@@ -16,7 +16,7 @@ export default function Menu() {
             aria-label="Home"
             sx={{ color: '#fff' }}
             onClick={() => {
-              navigate('/user/expenseOverview');
+              navigate('/expense-manager/user/expenseOverview');
             }}
           >
             <Typography variant="h6" color="inherit">
@@ -28,7 +28,7 @@ export default function Menu() {
             aria-label="Home"
             sx={{ color: '#fff' }}
             onClick={() => {
-              navigate('/');
+              navigate('/expense-manager/');
             }}
           >
             <Typography variant="h6" color="inherit">
@@ -42,7 +42,7 @@ export default function Menu() {
             <Button
               sx={{ my: 2, color: 'white' }}
               onClick={() => {
-                navigate('/signup');
+                navigate('/expense-manager/signup');
               }}
             >
               Sign up
@@ -51,7 +51,7 @@ export default function Menu() {
             <Button
               sx={{ color: '#fff' }}
               onClick={() => {
-                navigate('/signin');
+                navigate('/expense-manager/signin');
               }}
             >
               Sign In
@@ -70,7 +70,7 @@ export default function Menu() {
             </Button>
             <Button
               onClick={() => {
-                navigate('/user/expenses/report');
+                navigate('/expense-manager/user/expenses/report');
               }}
               sx={{ color: '#fff' }}
             >
@@ -79,7 +79,7 @@ export default function Menu() {
             <span style={{ position: 'absolute', right: '10px' }}>
               <Button
                 onClick={() => {
-                  navigate('/newExpense');
+                  navigate('/expense-manager/newExpense');
                 }}
                 sx={{ color: '#f44336', backgroundColor: '#ffffff', border:'1px solid #f44336', '&:hover':{color: '#f44336', backgroundColor: '#ffffff', border:'1px solid #f44336'} }}
               >
@@ -89,7 +89,7 @@ export default function Menu() {
 
               <Button
                 onClick={() => {
-                  navigate('/profile');
+                  navigate('/expense-manager/profile');
                 }}
                 sx={{ color: '#fff' }}
               >

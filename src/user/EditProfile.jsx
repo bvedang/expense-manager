@@ -51,7 +51,7 @@ export default function EditProfile() {
     };
     updateUser(updatedUser).then((resp) => {
       console.log(resp.data);
-      navigate('/profile');
+      navigate('/expense-manager/profile');
     });
     console.log(updatedUser);
   };

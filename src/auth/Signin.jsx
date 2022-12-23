@@ -29,7 +29,7 @@ export default function Signin(props) {
     };
     authctx.onLogin(user);
     setTimeout(() => {
-      navigate('/user/expenseOverview');
+      navigate('/expense-manager/user/expenseOverview');
     }, 1000);
   };
 

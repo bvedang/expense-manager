@@ -29,7 +29,7 @@ export default function Profile() {
   }, []);
 
   const toEditProfile = () => {
-    navigate('/user/edit/' + userProfile.id, { state: userProfile });
+    navigate('/expense-manager/user/edit/' + userProfile.id, { state: userProfile });
   };
   return (
     <Paper sx={{ minWidth: 500, margin: 3, p: 3, mt: 5 }} elevation={4}>

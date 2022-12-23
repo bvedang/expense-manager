@@ -101,7 +101,7 @@ export default function NewExpense() {
     };
     console.log(expense);
     newExpense(expense, token).then((resp) => console.log(resp));
-    navigate('/user/expenses');
+    navigate('/expense-manager/user/expenses');
   };
   return (
     <div>
@@ -212,7 +212,7 @@ export default function NewExpense() {
           </Button>
           <Button
             onClick={() => {
-              navigate('/user/expenseOverview');
+              navigate('/expense-manager/user/expenseOverview');
             }}
             className={classes.submit}
             variant="contained"

@@ -18,7 +18,6 @@ import { ExpandMore } from '@mui/icons-material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers';
-import { useNavigate } from 'react-router-dom';
 import AuthContext from '../store/auth-context';
 import { makeStyles } from '@mui/styles';
 import DeleteExpense from './DeleteExpense';

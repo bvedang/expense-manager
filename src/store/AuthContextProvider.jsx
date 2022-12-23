@@ -55,7 +55,7 @@ export default function AuthContextProvider(props) {
   const logoutHandler = () => {
     localStorage.clear();
     setIsLoggedIn(false);
-    navigate('/');
+    navigate('/expense-manager/');
   };
 
   const handleAuthError = () => {

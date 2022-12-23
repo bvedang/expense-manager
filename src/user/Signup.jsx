@@ -143,7 +143,7 @@ export default function Signup() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Link to="/signin">
+          <Link to="/expense-manager/signin">
             <Button color="primary" autoFocus="autoFocus" variant="contained">
               Sign In
             </Button>
