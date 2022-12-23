@@ -20,7 +20,7 @@ export default function MainRouter() {
     <div>
       <Menu />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/expense-manager/" element={<Home />} />
         {authContext.isLoggedIn ? (
           <Route path="/expense-manager/newExpense" element={<NewExpense />} />
         ) : (
