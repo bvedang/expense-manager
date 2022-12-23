@@ -62,7 +62,7 @@ export default function Menu() {
           <span>
             <Button
               onClick={() => {
-                navigate('/user/expenses');
+                navigate('/expense-manager/user/expenses');
               }}
               sx={{ color: '#fff' }}
             >
