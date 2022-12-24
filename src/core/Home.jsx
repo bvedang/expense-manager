@@ -177,11 +177,23 @@ export default function Home() {
         <Typography variant="body1" color="primary" component="p">
           Manage your expense here.
         </Typography>
-        <div style={{marginTop:5}}>
-          <Button variant="contained" sx={{ mx: 10 }} onClick={()=>{navigate("/expense-manager/signin")}}>
-            SignIn
+        <div style={{ marginTop: 5 }}>
+          <Button
+            variant="contained"
+            sx={{ mx: 10 }}
+            onClick={() => {
+              navigate('/expense-manager/signup');
+            }}
+          >
+            Signup
           </Button>
-          <Button variant="contained" sx={{ mx: 10 }} onClick={()=>{navigate("/expense-manager/signup")}}>
+          <Button
+            variant="contained"
+            sx={{ mx: 10 }}
+            onClick={() => {
+              navigate('/expense-manager/signin');
+            }}
+          >
             SignIn
           </Button>
         </div>
